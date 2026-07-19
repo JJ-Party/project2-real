@@ -1,0 +1,45 @@
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "navigation header"
+    "navigation maincontent";
+}
+nav#horizontalNavigation {
+    grid-area: navigation;
+}
+header {
+    grid-area: header;
+}
+
+div#everythingElse {
+    grid-area: maincontent;
+}
+/*
+div#outerDiv {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+nav#horizontalNavigation {
+    display: grid;
+    color: white;
+    background-color: rgb(145, 156, 174);
+    height: 100%;
+}
+nav > ul {
+    *//* line-height: 1.5em; *//*
+    display: grid;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    gap: 15px;
+    height: 100%;
+
+}
+*/
+
