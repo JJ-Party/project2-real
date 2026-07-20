@@ -2,44 +2,119 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    background-color: #c2c5aa;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    gap: 20px;
+    column-gap: 2vh;
     grid-template-areas: 
-    "navigation header"
+    "header header"
     "navigation maincontent";
 }
-nav#horizontalNavigation {
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+div#navigationBar {
     grid-area: navigation;
+}
+
+nav#horizontalNavigation {
+    background-color: #7f4f24;
+    outline: 5px solid #936639;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    height: fit-content;
+    
 }
 header {
     grid-area: header;
 }
 
 div#everythingElse {
+    display: grid;
     grid-area: maincontent;
+    grid-template-columns: 33% 58% ;
+    padding-left: 40px;
+    column-gap: 35px;
+    row-gap: 9px;
+    height: 95%;
+    grid-template-areas: 
+    "picture1 context1"
+    "picture2 context2"
+    "picture3 context3";
 }
-/*
-div#outerDiv {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    height: 100%;
+
+div#picture1 {
+    
+    grid-area: picture1;
+    background-color: rgb(98, 43, 20);
+    outline: 5px solid #936639;
+    height: 80%
 }
-nav#horizontalNavigation {
-    display: grid;
-    color: white;
-    background-color: rgb(145, 156, 174);
-    height: 100%;
+div#context1 {
+    
+    grid-area: context1;
+    background-color: #a68a64;
+    outline: 5px solid #936639;
+    height: 80%
+}
+
+
+div#picture2 {
+    
+    grid-area: picture2;
+    background-color: rgb(98, 43, 20);
+    outline: 5px solid #936639;
+    height: 80%
+}
+div#context2 {
+    
+    grid-area: context2;
+    background-color: #a68a64;
+    outline: 5px solid #936639;
+    height: 80%
+}
+div#picture3 {
+    
+    grid-area: picture3;
+    background-color: rgb(98, 43, 20);
+    outline: 5px solid #936639;
+    height: 80%
+}
+div#context3 {
+    
+    grid-area: context3;
+    background-color: #a68a64;
+    outline: 5px solid #936639;
+    height: 80%
 }
 nav > ul {
-    *//* line-height: 1.5em; *//*
+    line-height: 1.5em;
     display: grid;
     list-style: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    /*background-color: #0b1320;*/
+    align-content: start;
     text-align: center;
     gap: 15px;
     height: 100%;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-*/
-
+nav > ul > li {
+    display: inline;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color:rgb(228, 214, 169);
+    font-weight: bold;
+    
+}
