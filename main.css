@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     gap: 20px;
     column-gap: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     grid-template-areas: 
     "header header"
     "navigation maincontent";
@@ -95,6 +96,48 @@ div#context3 {
     outline: 5px solid #936639;
     height: 80%
 }
+
+div#everythingElseForm {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: start;
+    grid-area: maincontent;
+    padding-left: 10px;
+    row-gap: 9px;
+    background-color: #a68a64;
+    outline: 5px solid #936639;
+    height: 90%;
+    grid-template-areas:
+    "description"
+    "form";
+}
+
+div#description {
+    border: 3px solid #7f4f24;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height:fit-content;
+}
+div#form {
+    border: 3px solid #7f4f24;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height:fit-content;
+}
+
+#form label {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#form input{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav > ul {
     line-height: 1.5em;
     display: grid;
@@ -117,4 +160,33 @@ nav > ul > li > a {
     color:rgb(228, 214, 169);
     font-weight: bold;
     
+}
+
+div.gallery {
+    grid-area: maincontent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.gallery-item {
+    margin: 5px;
+    border: 3px solid #ccc;
+    width: 180px;
+}
+
+div.gallery-item:hover {
+    border: 3px solid #777;
+}
+
+div.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
