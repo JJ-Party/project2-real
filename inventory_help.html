@@ -3,11 +3,15 @@
 
 
 <head>
-    <title>Guide to Terraria</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Terraria UI Help</title>
+    
     <meta charset="utf-8">
     <meta name="keywords"
         content="Terraria, guide, guide terraria, beginner guide for terraria">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -29,26 +33,45 @@
             </ul>
         </nav>
     </div>
-    <div id="everythingElse">
-        <div id="picture1">
-            <p>Picture 1</p>
-        </div>
-        <div id="context1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu vitae ante pulvinar condimentum a lacinia nisl. Fusce accumsan, elit at gravida congue, quam tellus posuere felis, sed malesuada lectus eros facilisis ligula.</p>
-        </div>
-        <div id="picture2">
-            <p>Picture 2</p>
-        </div>
-        <div id="context2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu vitae ante pulvinar condimentum a lacinia nisl. Fusce accumsan, elit at gravida congue, quam tellus posuere felis, sed malesuada lectus eros facilisis ligula.</p>
-        </div>
-        <div id="picture3">
-            <p>Picture 2</p>
-        </div>
-        <div id="context3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu vitae ante pulvinar condimentum a lacinia nisl. Fusce accumsan, elit at gravida congue, quam tellus posuere felis, sed malesuada lectus eros facilisis ligula.</p>
-        </div>
-
+    <div id="everythingElseGettingStarted">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. Going into the inventory
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The inventory in terraria is the most important element in terraria. <strong>To open your inventory, click [ESC].</strong> This is where you will put all your items you get throughout your gameplay.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+            </div>
     </div>
 
 
