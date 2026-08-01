@@ -220,32 +220,63 @@ nav > ul > li > a {
     font-weight: bold;
     
 }
+nav > ul > li > a:hover {
+    color: #ffffff;
+}
 
 div.gallery {
     grid-area: maincontent;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
 }
 
 div.gallery-item {
+    background-color:#936639;
     margin: 5px;
-    border: 3px solid #ccc;
+    border: 5px solid #7f4f24;
     width: 180px;
+    display:flex;
+    flex-direction: column;
+
 }
 
 div.gallery-item:hover {
-    border: 3px solid #777;
+    border: 5px solid #573518;
 }
 
 div.gallery-item img {
     width: 100%;
-    height: auto;
+    height: 160px; 
+    object-fit: contain; 
+    padding-top: 10px; 
 }
-
 div.gallery-item div.desc {
     padding: 15px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-grow: 1; 
+}
+
+div#everythingElseClasses {
+    grid-area: maincontent;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+div.col div.card {
+    background-color: #936639;
+    border: 10px solid #7f4f24;
+    image-rendering: pixelated;
+    height: 100%;
+    
+}
+
+div.col div.card img.card-img-top {
+    height: 200px;         
+    object-fit: contain;   
+    padding-top: 15px;     
 }
