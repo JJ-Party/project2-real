@@ -57,14 +57,17 @@ div#picture1 {
     grid-area: picture1;
     background-color: rgb(98, 43, 20);
     outline: 5px solid #936639;
-    height: 80%
+    min-height: 60%;
+    height: 73%;
+    width: fit-content;
+    
 }
 div#context1 {
     
     grid-area: context1;
     background-color: #a68a64;
     outline: 5px solid #936639;
-    height: 80%
+    height: 73%;
 }
 
 
@@ -73,28 +76,32 @@ div#picture2 {
     grid-area: picture2;
     background-color: rgb(98, 43, 20);
     outline: 5px solid #936639;
-    height: 80%
+    min-height: 60%;
+    height: 73%;
+    width: fit-content;
 }
 div#context2 {
     
     grid-area: context2;
     background-color: #a68a64;
     outline: 5px solid #936639;
-    height: 80%
+    height: 73%;
 }
 div#picture3 {
     
     grid-area: picture3;
     background-color: rgb(98, 43, 20);
     outline: 5px solid #936639;
-    height: 80%
+    min-height: 60%;
+    height: 73%;
+    width: fit-content;
 }
 div#context3 {
     
     grid-area: context3;
     background-color: #a68a64;
     outline: 5px solid #936639;
-    height: 80%
+    height: 73%;
 }
 
 div#everythingElseForm {
@@ -150,7 +157,8 @@ div#everythingElseGettingStarted {
     row-gap: 9px;
     background-color: #a68a64;
     outline: 5px solid #936639;
-    height: 90%;
+    min-height: 90%;
+    height: fit-content;
     grid-template-areas:
     "description"
     "form";
@@ -174,12 +182,19 @@ div#everythingElseGettingStarted {
 .accordion-button.collapsed {
   color: #ffffff;
   font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .accordion-button:not(.collapsed) {
   color: #ffffff;
   font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion-body {
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav > ul {
