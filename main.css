@@ -26,8 +26,8 @@ div#navigationBar {
 }
 
 nav#horizontalNavigation {
-    background-color: #7f4f24;
-    outline: 5px solid #936639;
+    background-color: #936639;
+    outline: 5px solid #7f4f24;
     padding-top: 15px;
     padding-right: 5px;
     padding-bottom: 15px;
@@ -39,123 +39,33 @@ header {
 }
 
 div#everythingElse {
-    display: grid;
     grid-area: maincontent;
-    grid-template-columns: 33% 58% ;
-    padding-left: 40px;
-    column-gap: 35px;
-    row-gap: 9px;
-    height: 95%;
-    grid-template-areas: 
-    "picture1 context1"
-    "picture2 context2"
-    "picture3 context3";
-}
-/*
-div#everythingElseTest {
-    display: grid;
-    grid-area: maincontent;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
-    gap: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
-    align-content: start;
-}
-*/
-div#picture1 {
-    
-    grid-area: picture1;
-    background-color: rgb(98, 43, 20);
-    outline: 5px solid #936639;
-    min-height: 20vh;
-    height: 73%;
-    width: fit-content;
-    
-}
-div#context1 {
-    
-    grid-area: context1;
-    background-color: #a68a64;
-    outline: 5px solid #936639;
-    height: 73%;
-}
-
-
-div#picture2 {
-    
-    grid-area: picture2;
-    background-color: rgb(98, 43, 20);
-    outline: 5px solid #936639;
-    min-height: 60%;
-    height: 73%;
-    width: fit-content;
-}
-div#context2 {
-    
-    grid-area: context2;
-    background-color: #a68a64;
-    outline: 5px solid #936639;
-    height: 73%;
-}
-div#picture3 {
-    
-    grid-area: picture3;
-    background-color: rgb(98, 43, 20);
-    outline: 5px solid #936639;
-    min-height: 60%;
-    height: 73%;
-    width: fit-content;
-}
-div#context3 {
-    
-    grid-area: context3;
-    background-color: #a68a64;
-    outline: 5px solid #936639;
-    height: 73%;
-}
-/*
-.picture {
-    
-    background-color: rgb(98, 43, 20);
-    height: 30vh;
-    border: 5px solid #936639;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.context {
-    
-
-    background-color: #a68a64;
-    outline: 5px solid #936639;
     display: flex;
     flex-direction: column;
-}*/
-
-div#everythingElseTest {
-    grid-area: maincontent;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding-top: 15px; 
     padding-right: 20px;
     align-content: start;
 }
 
-/* Style the individual cards */
-.context {
-    background-color: #a68a64;
-    outline: 5px solid #936639;
+.card {
+    background-color: #936639; 
+    outline: 5px solid #7f4f24; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 23vh;
+}
+.context {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
 }
 
 
 .picture {
-    background-color: rgb(98, 43, 20);
-    height: 30vh;
-    border-bottom: 5px solid #936639; 
+    background-color: #936639;
+    flex: 0 0 40vh;
+    border-right: 5px solid #7f4f24;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,8 +94,8 @@ div#everythingElseForm {
     grid-area: maincontent;
     padding-left: 10px;
     row-gap: 9px;
-    background-color: #a68a64;
-    outline: 5px solid #936639;
+    background-color: #936639;
+    outline: 5px solid #7f4f24;
     height: 90%;
     grid-template-areas:
     "description"
@@ -193,7 +103,7 @@ div#everythingElseForm {
 }
 
 div#description {
-    border: 3px solid #7f4f24;
+    border: 5px solid #7f4f24;
     margin-top: 5px;
     margin-right: 10px;
     padding-left: 5px;
@@ -201,7 +111,7 @@ div#description {
     height:fit-content;
 }
 div#form {
-    border: 3px solid #7f4f24;
+    border: 5px solid #7f4f24;
     margin-top: 5px;
     margin-right: 10px;
     padding-left: 5px;
@@ -228,8 +138,8 @@ div#everythingElseGettingStarted {
     padding-top: 10px;
     margin-right: 15px;
     row-gap: 9px;
-    background-color: #a68a64;
-    outline: 5px solid #936639;
+    background-color: #936639;
+    outline: 5px solid #7f4f24;
     min-height: 90%;
     height: fit-content;
     grid-template-areas:
@@ -239,7 +149,7 @@ div#everythingElseGettingStarted {
 }
 
 .accordion-body {
-    background-color: #bc8a5f;
+    background-color: #936639;
 }
 
 
@@ -307,7 +217,7 @@ div.gallery {
 }
 
 div.gallery-item {
-    background-color:#936639;
+    background-color:#7f4f24;
     margin: 5px;
     border: 5px solid #7f4f24;
     width: 180px;
@@ -325,6 +235,7 @@ div.gallery-item img {
     height: 160px; 
     object-fit: contain; 
     padding-top: 10px; 
+    image-rendering: pixelated;
 }
 div.gallery-item div.desc {
     padding: 15px;
